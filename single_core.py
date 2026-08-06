@@ -1,3 +1,6 @@
+"""
+Preliminary single core implementation
+"""
 from pulp import LpProblem, LpMinimize, LpVariable, lpSum, LpStatus, value
 
 tasks = ['T1', 'T2', 'T3']
