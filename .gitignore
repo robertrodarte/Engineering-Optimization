@@ -1,3 +1,6 @@
 # Virtual environment
 venv/
 *__pycache__/
+figures
+cbc_log.txt
+experiment_results.csv
