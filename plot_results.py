@@ -11,10 +11,10 @@ FIG_DIR = "figures"
 TIME_LIMIT_SEC = 120  
 
 # Plot customization
-# branch_and_bound
-BLUE = "#2a78d6"  
-# branch_and_cut  
-ORANGE = "#eb6834"  
+# Branch-and-bound
+BLUE = "#2a78d6"
+# Branch-and-cut
+ORANGE = "#eb6834"
 INK = "#0b0b0b"
 SECONDARY_INK = "#52514e"
 MUTED = "#898781"
@@ -24,8 +24,8 @@ SURFACE = "#fcfcfb"
 
 METHOD_COLOR = {"branch_and_bound": BLUE, "branch_and_cut": ORANGE}
 METHOD_LABEL = {
-    "branch_and_bound": "branch_and_bound (cuts off)",
-    "branch_and_cut": "branch_and_cut (cuts on)",
+    "branch_and_bound": "Branch-and-Bound (cuts off)",
+    "branch_and_cut": "Branch-and-Cut (cuts on)",
 }
 
 
@@ -200,14 +200,14 @@ def main():
 
     dumbbell_plot(
         pairs, all_sizes, "nodes", "Nodes explored (symlog scale)",
-        "Nodes explored: branch_and_bound vs. branch_and_cut\n"
+        "Nodes explored: Branch-and-Bound vs. Branch-and-Cut\n"
         "(instances both methods proved optimal)",
         os.path.join(FIG_DIR, "nodes_vs_size.png"),
         symlog_thresh=5,
     )
     dumbbell_plot(
         pairs, all_sizes, "time_sec", "Solve time, seconds (symlog scale)",
-        "Solve time: branch_and_bound vs. branch_and_cut\n"
+        "Solve time: Branch-and-Bound vs. Branch-and-Cut\n"
         "(instances both methods proved optimal)",
         os.path.join(FIG_DIR, "time_vs_size.png"),
         symlog_thresh=0.05,
